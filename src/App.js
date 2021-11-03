@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from 'styled-components';
+import { lightMode } from './components/Themes/Themes';
+import { Route, Switch } from 'react-router';
+import GlobalStyle from './globalStyle';
+
+// Components
+import Welcome from './components/Welcome/Welcome';
+import About from './components/About/About';
+import Works from './components/Works/Works';
+import Blog from './components/Blog/Blog';
+import Skills from './components/Skills/Skills';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <GlobalStyle />
+            <ThemeProvider theme={lightMode}>
+                <Switch>
+                    <Route path="/" exact component={Welcome} />
+                    <Route path="/a-propos" component={About} />
+                    <Route path="/blog" component={Blog} />
+                    <Route path="/competances" exact component={Skills} />
+                    <Route path="/projets" component={Works} />
+                </Switch>
+            </ThemeProvider>
+        </>
+    );
 }
 
 export default App;
