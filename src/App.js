@@ -1,30 +1,23 @@
-import { ThemeProvider } from 'styled-components';
-import { lightMode } from './components/Themes/Themes';
-import { Route, Switch } from 'react-router';
-import GlobalStyle from './globalStyle';
+import { lazy, Suspense } from 'react';
+import { GlobalStyle } from './globalStyle';
 
-// Components
-import Welcome from './components/Welcome/Welcome';
-import About from './components/About/About';
-import Works from './components/Works/Works';
-import Blog from './components/Blog/Blog';
-import Skills from './components/Skills/Skills';
+const Home = lazy(() => import("./Pages/Home"));
+const Header = lazy(() => import("./components/Header"));
+const Footer = lazy(() => import("./components/Footer"));
+const ScrollToTop = lazy(() => import("./components/ScrollToTop"));
 
 function App() {
-    return (
-        <>
-            <GlobalStyle />
-            <ThemeProvider theme={lightMode}>
-                <Switch>
-                    <Route path="/" exact component={Welcome} />
-                    <Route path="/a-propos" component={About} />
-                    <Route path="/blog" component={Blog} />
-                    <Route path="/competances" exact component={Skills} />
-                    <Route path="/projets" component={Works} />
-                </Switch>
-            </ThemeProvider>
-        </>
-    );
+  return (
+    <>
+      <Suspense fallback={null}>
+        <GlobalStyle />
+        <Header />
+        <Home />
+        <Footer />
+        <ScrollToTop />
+      </Suspense>
+    </>
+  );
 }
 
 export default App;
