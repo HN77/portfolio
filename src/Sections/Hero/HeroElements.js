@@ -114,7 +114,9 @@ export const CTA = styled.button`
     align-items: center;
     transition: all 0.3s;
 
-    z-index: 9;
+    @media only Screen and (max-width: 48em) {
+        z-index: 999;
+    }
 
     &:hover {
         transform: scale(1.1);
