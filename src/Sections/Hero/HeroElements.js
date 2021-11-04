@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 
 export const HeroSection = styled.div`
     width: 100vw;
-    height: 45vw;
+    height: 45vh;
     color: var(--white);
     background-color: var(--black);
     display: flex;
@@ -10,7 +10,7 @@ export const HeroSection = styled.div`
     position: relative;
 
     @media only Screen and (max-width: 48em) {
-        height: 70vw;
+        height: 80vh;
         display: block;
     }
     @media only Screen and (max-width: 420px) {
@@ -147,5 +147,6 @@ export const DevSvg = styled.img`
 
     @media only Screen and (max-width: 40em) {
         display: none;
+        position: relative;
     }
 `;
