@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 
 export const HeroSection = styled.div`
     width: 100vw;
-    height: 45vh;
+    height: 50vh;
     color: var(--white);
     background-color: var(--black);
     display: flex;
@@ -10,8 +10,7 @@ export const HeroSection = styled.div`
     position: relative;
 
     @media only Screen and (max-width: 48em) {
-        height: 80vh;
-        display: block;
+        height: 85vh;
     }
     @media only Screen and (max-width: 420px) {
         height: auto;
@@ -116,6 +115,7 @@ export const CTA = styled.button`
 
     @media only Screen and (max-width: 48em) {
         z-index: 999;
+        background-color: #fff;
     }
 
     &:hover {
