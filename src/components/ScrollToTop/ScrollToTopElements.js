@@ -10,8 +10,8 @@ export const Up = styled.div`
         display: none;
     }
     img {
-        height: 3rem;
-        width: 3rem;
+        height: 2.5rem;
+        width: 2.5rem;
         background-color: var(--white);
         border-radius: 50%;
         border: 0.1rem solid var(--white);

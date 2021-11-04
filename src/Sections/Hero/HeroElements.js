@@ -81,7 +81,7 @@ export const Topic = styled.div`
     align-items: center;
     background-color: var(--nav);
     font-weight: 700;
-    font-size: calc(0.4rem + 0.4vw);
+    font-size: calc(0.3rem + 0.4vw);
     padding: 0.5rem 1rem;
     border-radius: 1.5rem;
 `;
@@ -94,7 +94,7 @@ export const Circle = styled.span`
     margin-right: 0.5rem;
 `;
 export const Title = styled.h1`
-    font-size: calc(2rem + 1vw);
+    font-size: calc(1.5rem + 1vw);
     line-height: 1.2;
     padding: 0.5rem 0;
 `;
@@ -103,16 +103,18 @@ export const SubText = styled.h5`
     color: var(--nav2);
 `;
 export const CTA = styled.button`
-    padding: 0.2rem 1rem;
+    padding: 0 1rem;
     margin-top: 1rem;
     border-radius: 1.5rem;
     cursor: pointer;
-    font-size: calc(0.4rem + 0.5vw);
-    font-weight: 700;
+    font-size: calc(0.3rem + 0.5vw);
+    font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.3s;
+
+    z-index: 9;
 
     &:hover {
         transform: scale(1.1);
@@ -132,7 +134,7 @@ export const Move = keyframes`
 `;
 export const DevSvg = styled.img`
     max-width: 180%;
-    width: calc(30% + 20vw);
+    width: calc(25% + 20vw);
     z-index: 7;
     animation: ${Move} 2.5s ease infinite;
 

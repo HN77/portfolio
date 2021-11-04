@@ -7,7 +7,8 @@ export const ProjectList = styled.div`
     align-items: center;
     padding: 4rem 7rem;
     margin: 0 auto;
-    margin-top: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
 
     @media only Screen and (max-width: 90em) {
         padding: 1rem;

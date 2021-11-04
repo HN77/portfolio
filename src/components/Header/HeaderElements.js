@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Headers = styled.header`
     display: flex;
-    height: 8vh;
+    height: 10vh;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5rem;
@@ -36,13 +36,17 @@ export const Logo = styled.div`
         height: 3rem;
         margin-right: 0.2rem;
     }
+    @media only screen and (max-width: 40em) {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
 `;
 
 export const Nav = styled.nav`
     width: 40rem;
     max-width: 60rem;
     height: 6vh;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 300;
     display: flex;
     margin-top: 0.4rem;

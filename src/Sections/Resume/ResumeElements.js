@@ -29,6 +29,10 @@ export const ReactIcon = styled.div`
     font-size: 3rem;
 
     animation: ${Move} 2.5s ease infinite;
+
+    @media only Screen and (max-width: 60em) {
+        display: none;
+    }
 `;
 export const NodeIcon = styled.div`
     position: absolute;
