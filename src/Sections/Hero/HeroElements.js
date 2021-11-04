@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 
 export const HeroSection = styled.div`
     width: 100vw;
-    height: 50vh;
+    height: 80vh;
     color: var(--white);
     background-color: var(--black);
     display: flex;
@@ -10,7 +10,8 @@ export const HeroSection = styled.div`
     position: relative;
 
     @media only Screen and (max-width: 48em) {
-        height: 85vh;
+        height: 80vh;
+        display: block;
     }
     @media only Screen and (max-width: 420px) {
         height: auto;

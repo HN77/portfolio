@@ -9,10 +9,11 @@ export const AboutSection = styled.div`
     align-items: center;
 `;
 export const Waves = styled.img`
-    width: 100%;
+    width: 101%;
     position: absolute;
     top: -1rem;
-    z-index: 2;
+    right: 0;
+    left: 0;
 `;
 export const Hand = styled.div`
     position: absolute;
