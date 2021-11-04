@@ -12,6 +12,7 @@ export const Waves = styled.img`
     width: 100%;
     position: absolute;
     top: -1rem;
+    z-index: 2;
 `;
 export const Hand = styled.div`
     position: absolute;

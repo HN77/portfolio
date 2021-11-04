@@ -23,8 +23,8 @@ export const Title = styled.h2`
     display: flex;
     justify-content: center;
     font-size: calc(1rem + 2vw);
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
     position: relative;
 
     &::before {

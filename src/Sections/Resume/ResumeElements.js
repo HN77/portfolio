@@ -41,6 +41,9 @@ export const NodeIcon = styled.div`
     font-size: 3rem;
 
     animation: ${Move} 2.5s ease infinite;
+    @media only Screen and (max-width: 60em) {
+        display: none;
+    }
 `;
 export const MongoDBIcon = styled.div`
     position: absolute;
@@ -49,6 +52,9 @@ export const MongoDBIcon = styled.div`
     font-size: 3rem;
 
     animation: ${Move} 2.5s ease infinite;
+    @media only Screen and (max-width: 60em) {
+        display: none;
+    }
 `;
 export const JsIcon = styled.div`
     position: absolute;
@@ -57,6 +63,9 @@ export const JsIcon = styled.div`
     font-size: 3rem;
 
     animation: ${Move} 2.5s ease infinite;
+    @media only Screen and (max-width: 60em) {
+        display: none;
+    }
 `;
 export const EXIcon = styled.div`
     position: absolute;
@@ -65,6 +74,9 @@ export const EXIcon = styled.div`
     font-size: 3rem;
 
     animation: ${Move} 2.5s ease infinite;
+    @media only Screen and (max-width: 60em) {
+        display: none;
+    }
 `;
 
 export const Title = styled.h2`
