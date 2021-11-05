@@ -34,9 +34,10 @@ export const Logo = styled.div`
 
     img {
         height: 3rem;
+        width: 2.5rem;
         margin-right: 0.2rem;
 
-        @media only screen and (max-width: 40em) {
+        @media only screen and (max-width: 65em) {
             height: 2rem;
             width: 2rem;
         }

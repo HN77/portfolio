@@ -54,7 +54,7 @@ const Service = () => {
 
         revealRefs.current.forEach((el, index) => {
             if (mq.matches) {
-                tl.from(el.childNodes[0], {
+                tl.from(el.childNodes[1], {
                     x: -300,
                     opacity: 0,
                     duration: 2,
@@ -69,7 +69,7 @@ const Service = () => {
                         snap: true,
                     },
                 })
-                    .to(el.childNodes[1], {
+                    .to(el.childNodes[2], {
                         transform: 'scale(0)',
                         duration: 2,
                         ease: 'power2.inOut',

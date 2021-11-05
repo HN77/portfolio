@@ -96,6 +96,7 @@ export const Form = styled.form`
     }
     textarea {
         width: 65%;
+        color: #fff;
         padding: 1rem calc(0.5rem + 1vw);
         margin-bottom: 1rem;
         background-color: var(--nav2);

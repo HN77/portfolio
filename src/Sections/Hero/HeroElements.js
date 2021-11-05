@@ -99,8 +99,8 @@ export const Title = styled.h1`
     padding: 0.5rem 0;
 `;
 export const SubText = styled.h5`
-    font-size: calc(0.5rem + 0.5vw);
-    color: var(--nav2);
+    font-size: calc(1rem + 0.5vw);
+    color: #a6a9b6;
 `;
 export const CTA = styled.button`
     padding: 0 1rem;
